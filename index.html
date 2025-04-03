@@ -123,7 +123,7 @@
         }
         
         function loadComments() {
-            fetch(""http://localhost/pizza/_comentarios/obtener_comentarios.php")
+            fetch("http://localhost/pizza/_comentarios/obtener_comentarios.php")
             .then(response => response.json())
             .then(comments => {
                 let commentsContainer = document.getElementById("commentsContainer");
