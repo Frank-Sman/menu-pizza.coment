@@ -106,7 +106,7 @@
                 return;
             }
             
-            fetch("guardar_comentario.php", {
+            fetch("http://localhost/pizza/_comentarios/guardar_comentario.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ comentario: commentBox.value })
@@ -123,7 +123,7 @@
         }
         
         function loadComments() {
-            fetch("obtener_comentarios.php")
+            fetch(""http://localhost/pizza/_comentarios/obtener_comentarios.php")
             .then(response => response.json())
             .then(comments => {
                 let commentsContainer = document.getElementById("commentsContainer");
